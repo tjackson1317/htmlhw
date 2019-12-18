@@ -52,6 +52,10 @@
 
   <h3>Script</h3>
   The script element is used to define a client-side script (JavaScript). It embeds or refers to JS code.
+
+  <h3>Google Analytics</h3>
+  To include Google Analytics tracking on a web page, a script element starts asynchronously downloading the analytics.js library. Then, a global ga function allows for scheduled commands to be run. The code also creates a new tracker object for the property specified via the GA_MEASUREMENT_ID parameter and sends a pageview to Google Analytics for the page. In this way, an optimized version of the Google Universal Analytics tracking code is
+  included in the boilerplate. Google is currently one of the most popular tracking solutions.
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
